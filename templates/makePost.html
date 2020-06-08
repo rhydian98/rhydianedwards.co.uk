@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form>
+<div class="row">
+    <div class="six columns" >
+        <label for="postTitle">Post title </label>
+        <input class="u-full-width" type="text" placeholder="Post Title" id="postTitle">
+    </div>
+    <div class="six columns">
+        <label for="tags">Tags</label>
+        <select class="u-full-width" id="tags">
+            <option value="Option1">General Programming</option>
+            <option value="Option2">Python</option>
+            <option value="Option3">Machine Learning</option>
+            <option value="Option4">Linux</option>
+        </select>
+    </div>
+    <label for="postContent">Post Content</label>
+    <textarea class="u-full-width" placeholder="lorem ipsum" id="postContent"></textarea>
+    <input class="button-primary" type="submit" value="Submit">
+</form>
+
+</div>
+
+
+
+{% endblock %}
