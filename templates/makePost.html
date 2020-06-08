@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<form>
+<form name="createPost" id="createPost" method="POST" action="{{url_for('create_post')}}"  novalidate>
 <div class="row">
     <div class="six columns" >
         <label for="postTitle">Post title </label>
