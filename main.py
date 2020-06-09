@@ -9,6 +9,11 @@ def index():
 def post():
     postName
     return render_template('post.html', postName=postName)
+
+@app.route('make_post')
+
+
+
 @app.route('/create_post')
 def create_post():
     return render_template('makePost.html')
